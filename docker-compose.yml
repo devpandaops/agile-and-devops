@@ -7,7 +7,7 @@ services:
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: clines
     volumes:
-    - db-volume:/var/lib/postgresql/data
+      - db-volume:/var/lib/postgresql/data
 
   api:
     image: devpandaops/clines-api
